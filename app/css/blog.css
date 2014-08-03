@@ -1,0 +1,81 @@
+
+.blog {
+    padding: 0 3%;
+    color: #ffffff;
+}
+.header{
+    padding-top: 1em;
+
+}
+.header h1{
+    padding: 0;
+    margin: 0;
+    color: #3a3a3a;
+}
+.blog article{
+    padding: 3% 0;
+    margin-bottom: 0.5em;
+    background: lightgrey;
+    padding-top: 0;
+}
+.blog article a{
+    color: #3a3a3a;
+    padding-left: 0.5em;
+}
+.blog article header{
+    padding-bottom: 5%;
+    padding-left: 0.5em;
+    background: #f15a23;
+    padding-top: 0.5em;
+}
+.caption{
+    box-sizing: border-box;
+    display: block;
+    background: #3a3a3a;
+    width: 100%;
+    padding: 0.2em 0 0.2em 0.5em;
+}
+.blog article header h2{
+    margin: 0;
+}
+.blog article img{
+    width: 35%;
+    float: right;
+}
+.blog article p{
+    display: inline;
+    height: auto;
+    color: #3a3a3a;
+}
+
+.initial{
+    height: 8.5em;
+    overflow: hidden;
+    margin: 0.5em 0.5em;
+}
+.expanded{
+    height:auto;
+    margin: 0.5em 0.5em;
+    padding-top: 1.2em;
+}
+
+
+/* CLEAR FIX, (CLEARING FLOATING ELEMENTS*/
+.clearfix:after,
+.blog:after {
+    Content: '';
+    Display: block;
+    Overflow: hidden;
+    Visibility: hidden;
+    Width: 0;
+    Height: 0;
+    Clear: both;
+}
+.clearfix,
+.blog {
+    Zoom: 1;
+}
+
+/*
+
+

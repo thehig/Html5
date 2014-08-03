@@ -1,0 +1,91 @@
+
+/*==============================================GLOBAL==============================================*/
+html{
+    color: #3a3a3a;
+    font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-size: 16px;
+    border-top: 0.5em solid #3a3a3a;
+}
+
+body{
+    margin: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+a.nav-link{
+    padding: 0.5em;
+    width: 25%;
+    float: right;
+    box-sizing: border-box;
+}
+
+/*==============================================/GLOBAL/==============================================*/
+
+/*==============================================HEADER==============================================*/
+.vbHeader {
+    text-align: center;
+    top: 0;
+    height: 6em;
+}
+.vbHeader img{
+    width: 70%;
+    display: inline;
+    margin-top:1em;
+}
+
+.vbHeader button{
+    width:15%
+float:right;
+}
+
+.menuImg{
+    padding: 0.5em 0;
+    box-shadow: 0 0 0.01em #3a3a3a;
+}
+
+.verticalAlign {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*==============================================/HEADER/==============================================*/
+
+
+/*==============================================NAVBAR==============================================*/
+
+.footer{
+    margin-top: 4%;
+}
+
+.footer nav ul{
+    color: #ffffff;
+    width: 100%;
+    background-color: #909090;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer nav ul li{
+    text-align: center;
+    padding: 5%;
+    border-top: 1px solid #747474;
+}
+
+.footer nav ul li:first-child{
+    border-top: none;
+}
+
+.footer nav ul li:hover{
+    background-color: #f15a23;
+}
+
+#navigation a{
+    color:white;
+    text-decoration: none;
+}

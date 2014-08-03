@@ -1,0 +1,9 @@
+{
+    "name": "My HTML Application",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular": "*",
+        "angular-route":"*"
+    } ,
+    "private": true
+}

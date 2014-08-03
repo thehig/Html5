@@ -1,0 +1,24 @@
+section{
+    position: relative;
+}
+section a{
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+section img{
+    width: 100%;
+}
+
+section h3{
+    text-align: center;
+    position: absolute;
+    top: 135px;
+    /*top: 275px;*/
+    left: 11%;
+    width: 75%;
+    background: rgba(255, 255, 255,1);
+    /*background: rgba(58, 58, 58,0.1);*/
+}
+
+

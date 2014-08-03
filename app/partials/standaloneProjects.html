@@ -1,0 +1,29 @@
+
+
+<div class="standaloneProjects">
+    <h2>Stand Alone Projects</h2>
+    <article ng-repeat="item in data">
+        <header>
+            <h3>{{item.header}}</h3>
+
+        </header>
+
+        <div class="expanded"   ng-show="activePosition == $index">
+            <img src="#" alt="newsImage1"/>
+            <p>
+                {{item.content}}
+            </p>
+
+        </div>
+        <a ng-show="activePosition == $index" href ng-click="check($index)">Collapse</a><br>
+
+        <div class="initial" ng-hide="activePosition == $index">
+            <img src="#" alt="newsImage1"/>
+            <p>
+                {{item.content}}
+            </p>
+
+        </div>
+        <a ng-hide="activePosition == $index" href ng-click="check($index)">Expand</a><br>
+    </article>
+</div>

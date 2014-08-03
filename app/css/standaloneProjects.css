@@ -1,0 +1,50 @@
+h2{
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+}
+.standaloneProjects {
+    padding: 0 3%;
+}
+
+.standaloneProjects article header{
+    padding: 5% 0;
+}
+.standaloneProjects article img{
+    width: 35%;
+    float: right;
+}
+
+.initial{
+    height: 8.5em;
+    overflow: hidden;
+}
+.standaloneProjects article p{
+    display: inline;
+    height: auto;
+}
+
+.expanded{
+    height:auto;
+}
+
+
+/* CLEAR FIX, (CLEARING FLOATING ELEMENTS*/
+.clearfix:after,
+.container:after {
+    Content: '';
+    Display: block;
+    Overflow: hidden;
+    Visibility: hidden;
+    Width: 0;
+    Height: 0;
+    Clear: both;
+}
+.clearfix,
+.container {
+    Zoom: 1;
+}
+
+/*
+
+

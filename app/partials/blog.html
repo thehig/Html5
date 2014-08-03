@@ -1,0 +1,51 @@
+<!--<link rel="stylesheet" href="css/blog.css"/>-->
+
+<div class="blog">
+    <header class="header">
+        <hr>
+        <h1>Blog</h1>
+        <hr>
+    </header>
+    
+    <article class="blogArticle" ng-repeat="item in data">
+        <header>
+            <h2>{{item.header}}</h2>
+
+        </header>
+
+        <span class="caption"> Posted: {{item.postdate}} Author: {{item.author}}</span>
+        <!--THIS OPTION TOGGLED ALL THE ARTICLES ON THE PAGE-->
+        <!--<div class="initial" ng-class="{expanded: obj.value2 == 'false', initial: obj.value2 == 'true'}">-->
+        <!--<img src="#" alt="newsImage1"/>-->
+        <!--<p>-->
+            <!--{{item.content}}-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<a href ng-click="obj.value2 = 'false'">change value 1 to someothervalue</a><br>&ndash;&gt;-->
+        <!--<a href ng-click="check($index, false)">Expand</a><br>-->
+        <!--<a href ng-click="obj.value2 = 'true'">change value 1 to somevalue</a>-->
+        <!--&lt;!&ndash;<a href ng-click="check($index, true)">Collapse</a>&ndash;&gt;-->
+
+        <div class="expanded" ng-show="activePosition == $index">
+            <img src="#" alt="newsImage1"/>
+            <p>
+                {{item.content}}
+            </p>
+        </div>
+        <a ng-show="activePosition == $index" href ng-click="check($index)">Collapse</a><br>
+
+        <div class="initial" ng-hide="activePosition == $index">
+            <img src="#" alt="newsImage1"/>
+            <p>
+                {{item.content}}
+            </p>
+        </div>
+        <a ng-hide="activePosition == $index" href ng-click="check($index)">Expand</a><br>
+
+
+
+
+
+
+    </article>
+</div>
